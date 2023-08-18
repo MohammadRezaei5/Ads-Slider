@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true,
+    // dynamicBullets: true,
   },
   // mousewheel: true,
   // keyboard: true,

@@ -112,6 +112,9 @@ body {
 .swiper-navBtn::after {
   font-size: 25px;
 }
+.swiper-pagination {
+  bottom: -3px !important;
+}
 .swiper-pagination-bullet {
   background-color: #adadad;
   width: 12px;
