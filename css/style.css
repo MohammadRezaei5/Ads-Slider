@@ -1,0 +1,149 @@
+/* fonts */
+@font-face {
+  font-family: vazir;
+  src: url(Fonts/Vazirmatn-FD-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: vazir;
+  src: url(Fonts/Vazirmatn-FD-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: vazir;
+  src: url(Fonts/Vazirmatn-FD-Thin.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: vazir;
+  src: url(Fonts/Vazirmatn-FD-Regular.ttf);
+  font-weight: 400;
+}
+/* css-reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "vazir", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #efefef;
+}
+/* container */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  height: 336px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+/* swiper */
+.swiper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+.swiper-slide .image-box {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.swiper-slide .image-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 55%);
+  bottom: 0;
+  right: 0;
+}
+.image-box .centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-weight: 600; ------- عدد میدم نمی دونم چرا کار نمی کند فونت بی ریخت میشه! */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.text-wrapper {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40px;
+  white-space: nowrap;
+}
+.centered-text .button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered-text .button-wrapper button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #417f56;
+  padding: 6px 32px;
+  color: #fff;
+  border-radius: 8px;
+}
+.swiper-slide .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-navBtn {
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  /* background-color: #fff; */
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 25px;
+}
+.swiper-pagination-bullet {
+  background-color: #adadad;
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #417f56;
+  border: 2px solid #e5f2e9;
+}
+/* rectangle */
+.rectangle {
+  position: absolute;
+  z-index: 2;
+  bottom: -17px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* media-query */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    max-width: 356px;
+    width: 100%;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+  .text-wrapper {
+    font-size: 21px;
+    white-space: wrap;
+  }
+  .image-box .centered-text {
+    width: 95%;
+  }
+}
