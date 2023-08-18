@@ -1,7 +1,8 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+  cssMode: true,
+  // slidesPerView: 1,
   // spaceBetween: 30,
-  grabCursor: true,
+  // grabCursor: true,
   // loop: true,
   // fade: "true",
   navigation: {
