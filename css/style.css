@@ -52,6 +52,9 @@ body {
   position: relative;
   border-radius: 8px;
 }
+.swiper .swiper-wrapper {
+  transform: none;
+}
 .swiper-slide .image-box {
   height: 100%;
   position: relative;
