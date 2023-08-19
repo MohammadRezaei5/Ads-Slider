@@ -137,7 +137,8 @@ body {
     width: 100%;
   }
   .swiper-navBtn {
-    display: none;
+    position: absolute;
+    top: 280px;
   }
   .text-wrapper {
     font-size: 21px;
